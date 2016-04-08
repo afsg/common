@@ -6,13 +6,13 @@
 
 int my_get_file_size(char *filename)
 {
-	struct stat st_fStat = {0};
+	struct stat finfo = {0};
 	
-	ret = stat(filename, &st_fStat);
+	ret = stat(filename, &finfo);
 	if(ret)
 		return ~0;
 	else
-		return st_fStat.st_size;
+		return finfo.st_size;
 }
 
 
