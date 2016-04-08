@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 
-
 #include "my_base.h"
 
 int my_get_file_size(char *filename)
